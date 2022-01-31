@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg_main: #0a1f44;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #071013;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 16px;
+  color: #eb5160;
+  letter-spacing: 0.02em;
+  margin: 32px 16px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px ;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.container-input input {
+  margin-right: 12px;
+  width: 400px;
+  margin: 0 16px;
+}
+
+/*RESULT AJAX*/
+.result-ajax {
+  margin: 70px 0 20px;
+}
+
+.result-ajax .cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.result-ajax .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background: var(--text_light);
+  color: var(--text_med);
+}
+
+.result-ajax .city::after {
+  content: "";
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}
+
+.result-ajax figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.result-ajax .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--text_dark);
+}
+
+.result-ajax .city sup {
+  font-size: 0.5em;
+}
+
+.result-ajax .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: var(--text_light);
+  background: var(--orange);
+}
+
+.result-ajax .city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+/*END AJAX RESULT*/
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+    text-align: right;
+    font-size: 1rem;
+    color: var(--text_light);
+    margin-top: 40px;
+  }
+  
+  .page-footer span {
+    color: var(--red);
+  }
+  
