@@ -16,7 +16,7 @@ async function pesquisar() {
   let inputVal = input.value;
 
   if (inputVal === "") {
-    msg.textContent = `You should type something, so I could search for you 😉`;
+    msg.textContent = `Digite alguma coisa, para que eu pesquise pra você 😉`;
     return;
   }
   //check if there's already a city
@@ -44,9 +44,9 @@ async function pesquisar() {
     });
 
     if (filteredArray.length > 0) {
-      msg.textContent = `The Weather for ${
+      msg.textContent = `A temperatura para  ${
         filteredArray[0].querySelector(".city-name span").textContent
-      }  has already been shown...But you might be more specific 😉`;
+      }  já foi informada...Talvez você queira saber de outra cidade... 😉`;
       return;
     }
   }
@@ -78,7 +78,7 @@ async function pesquisar() {
       input.value = "";
     })
     .catch(() => {
-      msg.textContent = "I couldn't find this city. Search for another one 😩";
+      msg.textContent = "Eita, lascou. Não achei essa cidade. Tente pesquisar por outra. My bad! 😩";
     });
 
   msg.textContent = "";
