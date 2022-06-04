@@ -17,6 +17,8 @@
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: #071013;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -29,6 +31,16 @@ h1 {
   text-align: center;
 }
 
+small{
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #eb5160;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -39,13 +51,13 @@ ul {
   list-style: none;
 }
 
-.msg{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-    margin: 16px ;
+.msg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  margin: 16px;
 }
 
 .container {
@@ -66,11 +78,6 @@ ul {
   margin-right: 12px;
   width: 400px;
   margin: 0 16px;
-}
-
-/*RESULT AJAX*/
-.result-ajax {
-  margin: 70px 0 20px;
 }
 
 .result-ajax .cities {
@@ -130,16 +137,3 @@ ul {
   height: 100px;
 }
 /*END AJAX RESULT*/
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-footer {
-    text-align: right;
-    font-size: 1rem;
-    color: var(--text_light);
-    margin-top: 40px;
-  }
-  
-  .page-footer span {
-    color: var(--red);
-  }
-  
